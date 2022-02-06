@@ -2,7 +2,6 @@ require "./pathfinder.cr"
 
 grid = Array(Array(Int32)).new
 
-# 11111,11111,11110,11111
 ARGV[4].split(",").each do |line|
   
   grid << Array(Int32).new
