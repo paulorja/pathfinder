@@ -6,6 +6,4 @@ to_y = 2
 
 grid = "11111,11111,11111,11111,11111"
 
-puts Time.now.to_f
 puts %x[./run #{from_x} #{from_y} #{to_x} #{to_y} #{grid}]
-puts Time.now.to_f
