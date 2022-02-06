@@ -75,7 +75,7 @@ class Pathfinder
   def neighbours(node)
     x = node[:x]
     y = node[:y]
-    [{x, y - 1}, {x, y + 1}, {x - 1, y}, {x + 1, y}].select do |x1, y1|
+    [{x, y - 1}, {x, y + 1}, {x - 1, y}, {x + 1, y}, {x - 1, y - 1}, {x + 1, y + 1}, {x - 1, y + 1}, {x + 1, y - 1}].select do |x1, y1|
       x1 >= 0 && x1 < @grid.size && y1 >= 0 && y1 < @grid[0].size && @grid[x1][y1] == 1
     end
   end
