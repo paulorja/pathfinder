@@ -6,4 +6,6 @@ to_y = 2
 
 grid = "11111,11111,11111,11111,11111"
 
-puts %x[./run #{from_x} #{from_y} #{to_x} #{to_y} #{grid}]
+path = %x[./run #{from_x} #{from_y} #{to_x} #{to_y} #{grid}]
+
+puts path
